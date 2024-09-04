@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class RightLeaningStars{
+  public static void main(String[] args){
+   Scanner scanner = new Scanner(System.in);
+   //System.out.print("Enter num: ");
+   //int len = 5; //Integer.valueOf(scanner.nextLine());
+   int breadth = 5;
+   printbreadth(breadth);
+   scanner.close();
+  }
+
+  static void printbreadth(int breadth){ //printing length breadth times
+    for(int i=1;i<=breadth;i++){
+      printstars(i);
+    }
+  }
+
+  static void printstars(int len){  // printing length
+   for(int i=1;i<=len;i++){
+    System.out.print("*");
+   }
+   System.out.println();
+  }
+}
