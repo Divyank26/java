@@ -1,0 +1,17 @@
+class Solution {
+public:
+    long long removeElement(vector<int>& nums, int val) {
+        long long k=0; // number of elements not equal to val, or size?
+        for(auto it=nums.begin();it!=nums.end();){
+            if(*it==val){
+               it= nums.erase(it);
+            }
+            else{
+                ++it;
+                k++;
+            }
+        }
+
+        return k;
+    }
+};
