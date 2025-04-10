@@ -1,0 +1,20 @@
+#include<bits/stdc++.h> // Brute force
+using namespace std;
+int main(){
+    int arr[]={1,2,3,4,5,6,7};
+    int k;
+    cout <<"k: ";
+    cin>>k;
+    int i, temp;
+    for(int j=0;j<k;j++){
+        temp=arr[0];
+        for(i=0;i<size(arr)-1;i++){
+            arr[i]=arr[i+1];
+        }
+        arr[i]=temp;
+    }
+    for(int l=0;l<size(arr);l++){
+        cout<<arr[l]<<" ";
+    }
+    return 0;
+}
