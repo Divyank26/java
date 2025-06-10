@@ -1,0 +1,12 @@
+let num = prompt('Enter a number. Prime numbers will be calculated till this number', '');
+if(num>=2){
+  console.log('2 is a prime number');
+}
+for(let i=3;i<=num;i++){
+  for(let j=2;j<i;j++){
+    if(i%j==0){
+      break;
+    }
+    console.log(`${i} is a prime number`);
+  }
+}
